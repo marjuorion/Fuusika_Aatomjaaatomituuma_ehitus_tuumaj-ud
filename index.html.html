@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Füüsika 9. klass – Aatomituum ja radioaktiivsus</title>
+<style>
+:root{--ink:#203047;--muted:#5d6b7c;--blue:#245b91;--pale:#eef5fb;--line:#d8e1ea;--green:#18794e;--red:#b42318}
+*{box-sizing:border-box}body{margin:0;background:#f4f7fb;color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{background:linear-gradient(120deg,#163d65,#2876a8);color:white;padding:42px 20px}
+header .inner,main{max-width:980px;margin:auto}header h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.12;margin:.25em 0}header p{max-width:700px;color:#e7f1fa}
+.tag{display:inline-block;border:1px solid #ffffff80;border-radius:99px;padding:3px 12px;font-size:.85rem}
+main{padding:24px 18px 60px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:22px;margin:18px 0;box-shadow:0 5px 18px #2030470a}
+h2{color:#174d78;margin-top:0;font-size:1.55rem}h3{margin-bottom:6px;color:#244f72}
+.lead{font-size:1.08rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.tile{background:var(--pale);border-radius:12px;padding:15px}.formula{font-size:1.35rem;text-align:center;background:#f2f6fa;padding:13px;border-radius:10px;font-weight:700}
+table{border-collapse:collapse;width:100%;margin:12px 0}th,td{border:1px solid var(--line);padding:9px;text-align:left}th{background:#edf4fa}
+.question{border-top:1px solid var(--line);padding:15px 0}.question:first-child{border-top:0}
+label.option{display:block;padding:7px 10px;margin:5px 0;border:1px solid var(--line);border-radius:9px;cursor:pointer}
+label.option:hover{background:#f2f7fb}input[type=number]{width:130px;padding:9px;border:1px solid #aebdca;border-radius:8px;font:inherit}
+button{background:var(--blue);color:white;border:0;border-radius:9px;padding:10px 17px;font:600 1rem inherit;cursor:pointer;margin:7px 5px 4px 0}
+button.secondary{background:#e8eef4;color:var(--ink)}button:hover{filter:brightness(.94)}
+.feedback{font-weight:650;margin-top:7px}.good{color:var(--green)}.bad{color:var(--red)}
+.note{background:#fff8e8;border-left:4px solid #d69b27;padding:12px 15px;border-radius:8px}
+.progress{height:8px;background:#e5ebf1;border-radius:20px;overflow:hidden}.progress span{display:block;height:100%;background:#2d8a62;width:0;transition:width .25s}
+footer{text-align:center;color:var(--muted);padding:20px}
+@media print{body{background:white}.card{box-shadow:none;break-inside:avoid}button{display:none}}
+</style>
+</head>
+<body>
+<header><div class="inner">
+<span class="tag">Interaktiivne õppetund · 9. klass</span>
+<h1>Aatomituum ja radioaktiivsus</h1>
+<p>Õpi tundma aatomituuma ehitust, isotoope, radioaktiivset lagunemist, tuumareaktsioone ning α-, β- ja γ-kiirgust.</p>
+<p><strong>Soovituslik kestus:</strong> 45–60 minutit · Teooria · Harjutused · Lõputest</p>
+</div></header>
+<main>
+<section class="card"><h2>Tunni eesmärgid</h2>
+<p>Tunni lõpuks oskad selgitada aatomi ja tuuma ehitust, arvutada neutronite arvu, kirjeldada isotoope ja radioaktiivset lagunemist ning võrrelda kolme kiirgusliiki.</p>
+<div class="grid"><div class="tile"><strong>1. Õpi</strong><br>Vaata teooria läbi.</div><div class="tile"><strong>2. Harjuta</strong><br>Lahenda interaktiivsed ülesanded.</div><div class="tile"><strong>3. Kontrolli</strong><br>Tee lõputest ja vaata tagasisidet.</div></div>
+</section>
+
+<section class="card"><h2>1. Millest koosneb aatom?</h2>
+<p>Aatom koosneb aatomituumast ja elektronidest. Tuumas paiknevad prootonid ja neutronid; elektronid asuvad tuuma ümber.</p>
+<table><tr><th>Osake</th><th>Elektrilaeng</th><th>Asukoht</th></tr><tr><td>Prooton</td><td>+1</td><td>Aatomituumas</td></tr><tr><td>Neutron</td><td>0</td><td>Aatomituumas</td></tr><tr><td>Elektron</td><td>−1</td><td>Tuuma ümber</td></tr></table>
+<p><strong>Tähised:</strong> Z – prootonite arv ehk järjenumber; A – massiarv ehk prootonite ja neutronite koguarv; N – neutronite arv.</p>
+<div class="formula">N = A − Z</div>
+<p><strong>Näide:</strong> naatrium-23 järjenumber on 11. Prootoneid on 11, neutroneid 23 − 11 = 12 ning neutraalses aatomis on 11 elektroni.</p>
+</section>
+
+<section class="card"><h2>2. Isotoobid</h2>
+<p><strong>Isotoobid</strong> on sama keemilise elemendi aatomid, millel on sama prootonite arv, kuid erinev neutronite arv. Seetõttu on neil erinev massiarv.</p>
+<table><tr><th>Isotoop</th><th>Prootoneid</th><th>Neutroneid</th></tr><tr><td>Süsinik-12</td><td>6</td><td>6</td></tr><tr><td>Süsinik-13</td><td>6</td><td>7</td></tr><tr><td>Süsinik-14</td><td>6</td><td>8</td></tr></table>
+<div class="note">Kõik need on süsiniku aatomid, sest nende tuumas on 6 prootonit.</div>
+<div class="question" data-correct="b" data-explain="Mõlemas tuumas on 6 prootonit, kuid neutronite arv on erinev."><strong>Kontrollküsimus:</strong> mis erineb süsinik-12 ja süsinik-14 tuumas?
+<label class="option"><input type="radio" name="iso" value="a"> Prootonite arv</label><label class="option"><input type="radio" name="iso" value="b"> Neutronite arv</label><label class="option"><input type="radio" name="iso" value="c"> Prootonite laeng</label>
+<button onclick="checkOne(this)">Kontrolli</button><div class="feedback"></div></div>
+</section>
+
+<section class="card"><h2>3. Radioaktiivne lagunemine</h2>
+<p>Mõned aatomituumad on ebastabiilsed. Need võivad iseenesest muutuda stabiilsemaks, eraldades seejuures kiirgust. Seda nimetatakse <strong>radioaktiivseks lagunemiseks</strong>.</p>
+<h3>α-lagunemine ehk alfalagunemine</h3><p>Alfaosake koosneb kahest prootonist ja kahest neutronist – see on heeliumi aatomi tuum. Alfalagunemisel massiarv väheneb 4 võrra ja järjenumber 2 võrra.</p>
+<div class="formula">²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He</div>
+<h3>β⁻-lagunemine ehk beetalagunemine</h3><p>Beetalagunemisel muutub neutron prootoniks ning tuumast eraldub elektron. Massiarv ei muutu, järjenumber suureneb 1 võrra.</p>
+<div class="formula">¹⁴₆C → ¹⁴₇N + ⁰₋₁e</div>
+<h3>γ-kiirgus ehk gammakiirgus</h3><p>Gammakiirgus on suure energiaga elektromagnetkiirgus. Tuum vabaneb liigsest energiast. Prootonite arv, neutronite arv ja massiarv ei muutu.</p>
+</section>
+
+<section class="card"><h2>4. α-, β- ja γ-kiirguse võrdlus</h2>
+<table><tr><th>Omadus</th><th>α</th><th>β⁻</th><th>γ</th></tr><tr><td>Koostis</td><td>2 prootonit + 2 neutronit</td><td>Elektron</td><td>Elektromagnetkiirgus</td></tr><tr><td>Laeng</td><td>+2</td><td>−1</td><td>0</td></tr><tr><td>Läbitungimisvõime</td><td>Väike</td><td>Keskmine</td><td>Suur</td></tr><tr><td>Ioniseerimisvõime</td><td>Suur</td><td>Keskmine</td><td>Väiksem</td></tr><tr><td>Varjestamine</td><td>Paber või naha pind</td><td>Sobiv plast või õhuke metall</td><td>Paks plii- või betoonkiht</td></tr></table>
+<div class="note"><strong>Meelespea:</strong> α – suur ioniseerimisvõime, väike läbitungimisvõime; β – vahepealsed omadused; γ – suur läbitungimisvõime. Väike läbitungimisvõime ei tähenda alati ohutust: alfa-kiirgust kiirgav aine võib organismi sattudes olla ohtlik.</div>
+</section>
+
+<section class="card"><h2>5. Tuumareaktsioonid</h2>
+<div class="grid"><div class="tile"><h3>Tuumade lõhustumine</h3><p>Raske aatomituum jaguneb kaheks või enamaks kergemaks tuumaks. Vabaneb energiat.</p></div><div class="tile"><h3>Tuumade ühinemine</h3><p>Kaks kergemat tuuma ühinevad raskemaks tuumaks. Ka selle käigus võib vabaneda energiat.</p></div></div>
+<p>Näide tuumade ühinemisest:</p><div class="formula">²₁H + ³₁H → ⁴₂He + ¹₀n</div>
+<p>Tuumareaktsioonides peavad massiarvude summad ja laenguarvude summad võrrandi mõlemal poolel võrdsed olema.</p>
+</section>
+
+<section class="card"><h2>6. Harjutus: leia neutronite arv</h2><p>Kasuta valemit N = A − Z. Sisesta igale isotoobile neutronite arv.</p>
+<div id="atomTasks"></div><button onclick="checkAtoms()">Kontrolli vastuseid</button><div id="atomResult" class="feedback"></div>
+</section>
+
+<section class="card"><h2>7. Harjutus: tunne kiirgus ära</h2><div id="radiationTasks"></div><button onclick="checkGroup('radiationTasks','radResult')">Kontrolli vastuseid</button><div id="radResult" class="feedback"></div></section>
+
+<section class="card"><h2>8. Õige või vale?</h2><div id="tfTasks"></div><button onclick="checkGroup('tfTasks','tfResult')">Kontrolli vastuseid</button><div id="tfResult" class="feedback"></div></section>
+
+<section class="card"><h2>9. Lõputest</h2><p>Vasta kõigile seitsmele küsimusele. Pärast esitamist näed tulemust ja selgitusi.</p><div class="progress"><span id="bar"></span></div><p id="count" class="feedback">Vastatud 0 / 7</p><div id="finalTasks"></div><button onclick="submitFinal()">Esita test</button><button class="secondary" onclick="resetFinal()">Alusta uuesti</button><div id="finalResult"></div></section>
+
+<section class="card"><h2>10. Tunni kokkuvõte</h2>
+<ol><li>Aatomituum koosneb prootonitest ja neutronitest; elektronid paiknevad tuuma ümber.</li><li>Isotoopidel on sama prootonite arv, kuid erinev neutronite arv.</li><li>Radioaktiivne lagunemine on ebastabiilse tuuma iseeneslik muutumine koos kiirguse eraldumisega.</li><li>α on heeliumi tuum, β⁻ on elektron ja γ on elektromagnetkiirgus.</li><li>Tuumade lõhustumisel raske tuum jaguneb; ühinemisel kerged tuumad liituvad.</li></ol>
+</section>
+<footer>Füüsika · 9. klass · Aatomituum ja radioaktiivsus</footer>
+</main>
+<script>
+function checkOne(btn){const q=btn.closest('.question'),sel=q.querySelector('input:checked'),f=q.querySelector('.feedback');if(!sel){f.textContent='Vali enne vastus.';f.className='feedback bad';return}const ok=sel.value===q.dataset.correct;f.textContent=(ok?'Õige! ':'Proovi veel. ')+q.dataset.explain;f.className='feedback '+(ok?'good':'bad')}
+const atoms=[['Hapnik-16',16,8,8],['Uraan-235',235,92,143],['Kloor-37',37,17,20],['Kaltsium-40',40,20,20]];
+document.getElementById('atomTasks').innerHTML=atoms.map((a,i)=>`<p><strong>${a[0]}</strong> (A = ${a[1]}, Z = ${a[2]}) – neutroneid: <input type="number" id="atom${i}" aria-label="${a[0]} neutronite arv"></p>`).join('');
+function checkAtoms(){let score=0;atoms.forEach((a,i)=>{let el=document.getElementById('atom'+i);el.style.borderColor=Number(el.value)===a[3]?'#18794e':'#b42318';if(Number(el.value)===a[3])score++});document.getElementById('atomResult').textContent=`Õigeid vastuseid: ${score} / ${atoms.length}`;document.getElementById('atomResult').className='feedback '+(score===4?'good':'bad')}
+const rad=[['Koosneb kahest prootonist ja kahest neutronist.',['α-kiirgus','β-kiirgus','γ-kiirgus'],0],['Selle läbitungimisvõime on kolmest suurim.',['α-kiirgus','β-kiirgus','γ-kiirgus'],2],['Tuumast eraldub elektron.',['α-kiirgus','β-kiirgus','γ-kiirgus'],1],['See on laenguta elektromagnetkiirgus.',['α-kiirgus','β-kiirgus','γ-kiirgus'],2]];
+const tf=[['Isotoopidel on sama prootonite arv.',true],['Alfaosake on elektron.',false],['Gammakiirgusel puudub elektrilaeng.',true],['Beetalagunemisel (β⁻) massiarv muutub.',false],['Tuumade ühinemisel võivad ühineda kaks kerget tuuma.',true]];
+function renderGroup(id,data,type){document.getElementById(id).innerHTML=data.map((q,i)=>`<div class="question"><strong>${i+1}. ${q[0]}</strong>${(type==='rad'?q[1]:['Õige','Vale']).map((v,j)=>`<label class="option"><input type="radio" name="${id}${i}" value="${j}"> ${v}</label>`).join('')}<div class="feedback" id="${id}f${i}"></div></div>`).join('')}
+renderGroup('radiationTasks',rad,'rad');renderGroup('tfTasks',tf,'tf');
+function checkGroup(id,result){let data=id==='radiationTasks'?rad:tf,score=0;data.forEach((q,i)=>{let s=document.querySelector(`input[name="${id}${i}"]:checked`),f=document.getElementById(id+'f'+i),ok=s&&Number(s.value)===(id==='radiationTasks'?q[2]:(q[1]?0:1));if(ok)score++;f.textContent=!s?'Vastus puudub.':ok?'Õige!':'Õige vastus: '+(id==='radiationTasks'?q[1][q[2]]:(q[1]?'Õige':'Vale'));f.className='feedback '+(ok?'good':'bad')});document.getElementById(result).textContent=`Tulemus: ${score} / ${data.length}`}
+const final=[['Mis määrab keemilise elemendi?',['Neutronite arv','Prootonite arv','Elektronide arv'],1,'Elemendi määrab prootonite arv ehk järjenumber.'],['Mitu neutronit on süsinik-14 tuumas?',['6','8','14'],1,'14 − 6 = 8 neutronit.'],['Milline kiirgus koosneb heeliumi tuumadest?',['Alfa','Beeta','Gamma'],0,'Alfaosake koosneb kahest prootonist ja kahest neutronist.'],['Mis muutub beetalagunemisel (β⁻)?',['Massiarv väheneb 4 võrra','Järjenumber suureneb 1 võrra','Järjenumber väheneb 2 võrra'],1,'Neutron muutub prootoniks, seega järjenumber suureneb ühe võrra.'],['Millisel kiirgusel on suurim läbitungimisvõime?',['Alfa','Beeta','Gamma'],2,'Gammakiirguse läbitungimisvõime on neist kolmest suurim.'],['Milline väide iseloomustab isotoope?',['Sama neutronite arv, erinev prootonite arv','Sama prootonite arv, erinev neutronite arv','Sama massiarv'],1,'Isotoopidel on sama prootonite arv, kuid erinev neutronite arv.'],['Mis toimub tuumade lõhustumisel?',['Raske tuum jaguneb kergemateks tuumadeks','Kaks tuuma ühinevad','Tuumast eraldub ainult gammakiirgus'],0,'Lõhustumisel jaguneb raske tuum väiksemateks tuumadeks.']];
+function renderFinal(){document.getElementById('finalTasks').innerHTML=final.map((q,i)=>`<div class="question"><strong>${i+1}. ${q[0]}</strong>${q[1].map((v,j)=>`<label class="option"><input type="radio" name="final${i}" value="${j}" onchange="updateCount()"> ${v}</label>`).join('')}<div id="ff${i}"></div></div>`).join('');updateCount()}
+function updateCount(){let n=final.filter((q,i)=>document.querySelector(`input[name="final${i}"]:checked`)).length;document.getElementById('count').textContent=`Vastatud ${n} / 7`;document.getElementById('bar').style.width=(n/7*100)+'%'}
+function submitFinal(){let score=0,missing=0;final.forEach((q,i)=>{let s=document.querySelector(`input[name="final${i}"]:checked`),f=document.getElementById('ff'+i);if(!s){missing++;f.innerHTML='<p class="feedback bad">Vastus puudub.</p>';return}let ok=Number(s.value)===q[2];if(ok)score++;f.innerHTML=`<div class="tile"><strong class="${ok?'good':'bad'}">${ok?'Õige!':'Vale vastus'}</strong><br>Õige vastus: <strong>${q[1][q[2]]}</strong><br>${q[3]}</div>`});if(missing){document.getElementById('finalResult').innerHTML=`<p class="feedback bad">Vasta veel ${missing} küsimusele ja esita test uuesti.</p>`;return}document.getElementById('finalResult').innerHTML=`<div class="tile"><h2>Tulemus: ${score} / 7</h2><p>${score===7?'Suurepärane! Oled teema väga hästi omandanud.':score>=5?'Väga tubli! Põhiteadmised on selged.':'Vaata teooria veel kord üle ja proovi uuesti.'}</p></div>`}
+function resetFinal(){document.querySelectorAll('input[name^="final"]').forEach(x=>x.checked=false);final.forEach((q,i)=>document.getElementById('ff'+i).innerHTML='');document.getElementById('finalResult').innerHTML='';updateCount()}
+renderFinal();
+</script>
+</body></html>
